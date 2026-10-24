@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Kanban Board - Portofolio Project</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <h1 style="text-align: center;">My Task Board</h1>
+  <p>By Audrey</p>
+  <img src="https://i.pinimg.com/1200x/24/84/90/248490abafb1ec6794fb85414a937309.jpg"/>
+
+  <!-- FORM INPUT TUGAS BARU -->
+  <div class="form-container">
+    <input type="text" id="inputTask" placeholder="Tulis tugas baru...">
+    <button id="btnTambah">Tambah Tugas</button>
+  </div>
+
+  <!-- PAPAN KANBAN (2 KOLOM) -->
+  <div class="board">
+    <div class="column">
+      <h3>Belum Selesai</h3>
+      <div id="colTodo"></div>
+    </div>
+    <div class="column">
+      <h3>Selesai</h3>
+      <div id="colDone"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
